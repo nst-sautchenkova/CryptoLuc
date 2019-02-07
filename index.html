@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+       
+    <link rel="stylesheet" href="css/ion.rangeSlider.css" />
+    <link rel="stylesheet" type="text/css" href="animate/aos.css" />
+    <link rel="stylesheet" type="text/css" href="css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" /> 
+    
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+    
+    <script type="text/javascript" src="js/jquery.js"></script>
+</head>
+	<body>
+        <!--------------------------------------->
+        <!--------------------------------------->
+        <!--  NAV PAGES                        -->
+        <!--------------------------------------->
+        <!--------------------------------------->
+        <div id="nav-pages">
+            <a href="index.html">1</a>
+            <a href="investments.html">2</a>
+            <a href="about.html">3</a>
+            <a href="contacts.html">4</a>
+            <a href="entry.html">5</a>
+            <a href="faq.html">6</a>
+            <a href="partnership.html">7</a>
+            <a href="review.html">8</a>
+            <a href="start.html">9</a>
+            <a href="_ADMIN open-deposit.html">10</a>
+            <a href="_ADMIN account.html">11</a>
+            <a href="_ADMIN referal.html">12</a>
+            <a href="_ADMIN requisites.html">13</a>
+            <a href="_ADMIN banner.html">14</a>
+            <a href="_ADMIN settings.html">15</a>
+            <a href="_ADMIN table.html">16</a>
+            <a href="_ADMIN withdraw funds.html">17</a>
+        </div>
+        <style>
+			#nav-pages{
+				position: fixed;
+				height: 100vh;
+				z-index: 9999;
+				background: rgba(255,255,255,0.5);
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-start;
+				align-items: center;
+				overflow-y: auto;
+				padding: 0 5px 5px;
+			}
+			#nav-pages a{
+				text-decoration: none;
+				color: #fff;
+				display: block;
+				padding: 5px;
+				background: rgba(0, 0, 0, 0.4);
+				text-align: center;
+				width: 30px;
+				margin-top: 5px;
+			}
+			#nav-pages a:hover{
+				background: rgba(0, 0, 0, 0.8);
+			}
+		</style>
+        <!--------------------------------------->
+        <!--------------------------------------->
+        <!--  NAV PAGES                        -->
+        <!--------------------------------------->
+        <!--------------------------------------->
+        
+        <div id="loader">
+            <div class="spinner">
+                <div class="bubble-1"></div>
+                <div class="bubble-2"></div>
+             </div>
+        </div>
+        <div id="wrapper" class="index-page">
+            <header>
+                <div class="container">
+                    <div class="top-block">
+                        <div class="top flex">
+                            <div class="left-block">
+                                <div class="contacts flex">
+                                    <div class="adress">
+                                        <p>116&nbsp;Hampton&nbsp;Road, Mayfair, London, United&nbsp;Kingdom</p>
+                                    </div>
+                                    <div class="mail">
+                                        <a href="mailto:Info@cryptoluc.com">Info@cryptoluc.com</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right-block flex">
+                                <div class="social-networks">
+                                    <a href="#" class="telegram"><img src="img/telegram.svg" alt="telegram"/></a>
+                                    <a href="#" class="skype"><img src="img/skype.svg" alt="skype"/></a>
+                                    <a href="#" class="facebook"><img src="img/facebook.svg" alt="facebook"/></a>
+                                    <a href="#" class="vk"><img src="img/vk.svg" alt="vk"/></a>
+                                    <a href="#" class="youtube"><img src="img/youtube.svg" alt="youtube"/></a>
+                                </div>
+                                <div class="language flex">
+                                    <div class="ru">
+                                        <a href="#">Русский</a>
+                                    </div>
+                                    <div class="en">
+                                        <a href="#">English</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!--/.top-->
+                        <div class="middle flex">
+                            <div class="logo"><a href="#" class="flex"><img src="img/logo.svg" alt="CryptoLuc" class="l-1"/><img src="img/CryptoLuc.svg" alt="CryptoLuc" class="l-2"/></a></div>
+                            <nav class="menu">
+                                <a class="cd-nav-trigger scale">
+                                    <div class="hamburger-menu menu-toggle">
+                                        <div class="bar"></div>
+                                        <div class="bar"></div>
+                                        <div class="bar"></div>
+                                    </div>
+                                </a>
+                                <ul class="menu-main">
+                                    <li><a href="#">Главная</a></li>       
+                                    <li class="sub">
+                                        <a href="#">Информация</a>
+                                        <ul>
+                                            <li><a href="#">О нас</a></li> 
+                                            <li><a href="#">Инвестиции </a></li>
+                                            <li><a href="#">Партнерство</a></li>
+                                        </ul>
+                                    </li>       
+                                    <li><a href="#">Как начать</a></li>       
+                                    <li><a href="#">отзывы</a></li>       
+                                    <li><a href="#">FAQ</a></li>       
+                                    <li><a href="#">Контакты</a></li>
+                                </ul>
+                            </nav>
+                            <div class="reg-block">
+                                <a href="#" class="btn reg">Регистрация</a>
+                                <a href="#" class="btn entry">Вход</a>
+                            </div>
+                        </div><!--/.middle-->
+                    </div><!--/top-block-->
+                    <div class="bottom">
+                        <div class="center">
+                        <div class="title flex">
+                        	<h1>Высокодоходные инвестиции в майнинг</h1>
+                        </div>
+                        <p>Зарабатывайте с крупнейшей майнинг-компанией, которая занимается промышленной добычей биткоина на модифицированных ASIC-устройствах!</p>
+                        <div class="flex btn-block">
+                            <a href="#" class="pink-btn btn pink-btn-op"><span>Подробнее&nbsp;и&nbsp;компании</span></a>
+                            <a href="#" class="pink-btn btn"><span>Быстрая&nbsp;регистрация</span></a>
+                        </div>
+                        
+                        <div class="flex ico-block">
+                            <div class="item">
+                            	<div class="bg-block">
+                                	<svg width="200px" height="200px" id="qwe">
+										<linearGradient id="gradient">
+											<stop offset="0" stop-color="#e92083"></stop>
+											<stop offset="50%" stop-color="#9f14ee"></stop>
+											<stop offset="100%" stop-color="#28055f"></stop>
+										</linearGradient>
+										
+										<mask id="mask-top">
+											<circle  r="100px" cx="100" cy="100" fill="white" />
+										</mask>
+										
+										<g fill="url(#gradient)" stroke="url(#gradient)" stroke-width="6">
+											<g mask="url(#mask-top)">
+											   <path id="qq" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="516" stroke-dashoffset="0"  fill-rule="white"  stroke-width="6px" fill="none"
+									 d="M163.919,30.956 C182.143,48.107 193.522,72.451 193.522,99.453 C193.522,151.388 151.427,193.490 99.500,193.490 C47.573,193.490 5.478,151.388 5.478,99.453 C5.478,48.757 45.589,7.430 95.803,5.488 ">
+													<animate id="p1" attributeName="stroke-dashoffset" begin="0s;an6.end" values="516; 0" dur="0.6s" repeatCount="1" fill="freeze" calcMode="linear">
+													</animate>
+												</path>
+											</g>
+										</g>
+									</svg>
+                            	</div>
+                                <div class="flex">
+                                    <div class="img"><img src="img/ico-3.png" alt=""/></div>
+                                    <span class="number">$100&nbsp;000</span>
+                                    <div class="title">Инвестировано</div>
+                                </div>
+                        	</div><!--/ITEM-->
+                            
+                            <div class="item">
+                            	<div class="bg-block">
+                                	<svg width="200px" height="200px" id="qwe">
+										<linearGradient id="gradient2">
+											<stop offset="0" stop-color="#e92083"></stop>
+											<stop offset="50%" stop-color="#9f14ee"></stop>
+											<stop offset="100%" stop-color="#28055f"></stop>
+										</linearGradient>
+										
+										<mask id="mask-top2">
+											<circle  r="100px" cx="100" cy="100" fill="white" />
+										</mask>
+										
+										<g fill="url(#gradient2)" stroke="url(#gradient2)" stroke-width="6">
+											<g mask="url(#mask-top2)">
+											   <path id="qq" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="516" stroke-dashoffset="0"  fill-rule="white"  stroke-width="6px" fill="none"
+									 d="M163.919,30.956 C182.143,48.107 193.522,72.451 193.522,99.453 C193.522,151.388 151.427,193.490 99.500,193.490 C47.573,193.490 5.478,151.388 5.478,99.453 C5.478,48.757 45.589,7.430 95.803,5.488 ">
+													<animate id="p1" attributeName="stroke-dashoffset" begin="0s;an6.end" values="516; 0" dur="0.8s" repeatCount="1" fill="freeze" calcMode="linear">
+													</animate>
+												</path>
+											</g>
+										</g>
+									</svg>
+                            	</div>
+                                <div class="flex">
+                                    <div class="img"><img src="img/ico-4.png" alt=""/></div>
+                                    <span class="number">$100&nbsp;000</span>
+                                    <div class="title">Инвестировано</div>
+                                </div>
+                        	</div><!--/ITEM-->
+                            
+                            <div class="item">
+                            	<div class="bg-block">
+                                	<svg width="200px" height="200px" id="qwe">
+										<linearGradient id="gradient3">
+											<stop offset="0" stop-color="#e92083"></stop>
+											<stop offset="50%" stop-color="#9f14ee"></stop>
+											<stop offset="100%" stop-color="#28055f"></stop>
+										</linearGradient>
+										
+										<mask id="mask-top3">
+											<circle  r="100px" cx="100" cy="100" fill="white" />
+										</mask>
+										
+										<g fill="url(#gradient3)" stroke="url(#gradient3)" stroke-width="6">
+											<g mask="url(#mask-top3)">
+											   <path stroke-linecap="round" stroke-linejoin="round" id="qq" stroke-dasharray="516" stroke-dashoffset="0"  fill-rule="white"  stroke-width="6px" fill="none"
+									 d="M163.919,30.956 C182.143,48.107 193.522,72.451 193.522,99.453 C193.522,151.388 151.427,193.490 99.500,193.490 C47.573,193.490 5.478,151.388 5.478,99.453 C5.478,48.757 45.589,7.430 95.803,5.488 ">
+													<animate id="p1" attributeName="stroke-dashoffset" begin="0s;an6.end" values="516; 0" dur="1s" repeatCount="1" fill="freeze" calcMode="linear">
+													</animate>
+												</path>
+											</g>
+										</g>
+									</svg>
+                            	</div>
+                                <div class="flex">
+                                    <div class="img"><img src="img/ico-5.png" alt=""/></div>
+                                    <span class="number">$100&nbsp;000</span>
+                                    <div class="title">Инвестировано</div>
+                                </div>
+                        	</div><!--/ITEM-->
+                    	</div>
+                        </div>
+                    </div><!--/.bottom-->
+                </div><!--/.container-->
+            </header><!--/header-->
+            
+            <div class="margin-top container shadow" data-aos="fade-up" data-aos-delay="300" data-aos-once="true">
+                <section id="tab-block" class="tabs">
+                    <input id="tab-1" type="radio" name="radio-set" class="tab-selector-1 tab-selector" checked="checked" />
+                    <label for="tab-1" class="tab-label-1 label-selector"><span class="number">50%</span><p>прибыли за 24 часа</p></label>
+            
+                    <input id="tab-2" type="radio" name="radio-set" class="tab-selector-2 tab-selector" />
+                    <label for="tab-2" class="tab-label-2 label-selector"><span class="number">100%</span><p>прибыли за 48 часа</p></label>
+            
+                    <input id="tab-3" type="radio" name="radio-set" class="tab-selector-3 tab-selector" />
+                    <label for="tab-3" class="tab-label-3 label-selector"><span class="number">2000%</span><p>прибыли за 60 часов</p></label>
+                
+                    <input id="tab-4" type="radio" name="radio-set" class="tab-selector-4 tab-selector" />
+                    <label for="tab-4" class="tab-label-4 label-selector"><span class="number">9999%</span><p>прибыли за 99 часов</p></label>
+            
+			    <div class="clear-shadow"></div>
+				
+		        <div class="content">
+			        <div class="content-1 t-selector">
+						<div id="calculator-tab-1" class="calculator-block flex">
+                            <div class="left-block">
+                            	<div class="title">Рассчитайте прибыть</div>
+                                <div class="choose-currency">
+                                	<div class="title">Выберите валюту:</div>
+                                    <ul class="currency-block">
+                                        <li id="BTC">BTC</li>
+                                        <li id="LTC">LTC</li>
+                                        <li id="ETH">ETH</li>
+                                        <li id="DASH">DASH</li>
+                                        <li id="RUB">RUB</li>
+                                        <li id="USD" class="active">USD</li>
+                                    </ul>
+                                </div><!--/choose-currency-->
+                                
+                                <div class="flex controls-block">
+                                    <div class="title">Введите&nbsp;сумму</div>
+                                    <div class="extra-controls">
+                                        <input id="rezult-choose1" class="rezult-choose" type="text" value="USD" /> 
+                                        <input type="text" class="js-input" value="0" />
+                                    </div>
+                                </div>                                
+                                <div class="range-slider">
+                                    <input type="text" class="js-range-slider" value="" />
+                                </div>
+                            </div><!--/left-block-->
+                            
+                            <div class="right-block">
+                                <ul>
+                                    <li>
+                                    	<span class="list-type"></span>
+                                        <p class="title">Начисления: <span class="color-pink charges">3.5%&nbsp;ежедневно</span></p>
+                                    </li>
+                                    <li>
+                                    	<span class="list-type"></span>
+                                        <p class="title">Всего: <span class="color-pink total-proc">150%</span></p>
+                                    </li>
+                                    <li>
+                                    	<span class="list-type"></span>
+                                        <p class="title">Срок инвестирования: <span class="color-pink rab-day">48&nbsp;рабочих дней</span></p>
+                                    </li>
+                                    <li>
+                                    	<span class="list-type"></span>
+                                        <p class="title">Min-max сумма депозита: <span class="color-pink amount-deposit">$10&nbsp;-&nbsp;$100&nbsp;000</span></p>
+                                    </li>
+                                    <li>
+                                    	<span class="list-type"></span>
+                                        <p class="title">Депозит <span class="color-pink on-deposit">включен</span>&nbsp;в&nbsp;выплаты</p>
+                                    </li>
+                                </ul>
+                                <div class="flex">
+                                    <div id="total-profit-1" class="total-profit">
+                                        <div class="title">Общая&nbsp;прибыль:</div>
+                                        <div class="flex-t">
+                                            <span id="in-total-1">10</span>
+                                            <span id="value-1" class="value">USD</span>
+                                        </div>
+                                    </div>
+                                    <div class="btn-deposit">
+                                    	<a href="#" class="pink-btn btn"><span>Открыть&nbsp;депозит</span></a>
+                                    </div>
+                                </div>
+                            </div><!--/right-block-->
+                        </div><!--/calculator-block-->
+				    </div><!--/content-1-->
+                    
+			        <div class="content-2 t-selector">
+						<div id="calculator-tab-2" class="calculator-block flex">
+                            <div class="left-block">
+                            	<div class="title">Рассчитайте прибыть</div>
+                                <div class="choose-currency">
+                                	<div class="title">Выберите валюту:</div>
+                                    <ul class="currency-block">
+                                        <li id="BTC">BTC</li>
+                                        <li id="LTC">LTC</li>
+                                        <li id="ETH">ETH</li>
+                                        <li id="DASH">DASH</li>
+                                        <li id="RUB">RUB</li>
+                                        <li id="USD" class="active">USD</li>
+                                    </ul>
+                                </div><!--/choose-currency-->
+                                
+                                <div class="flex controls-block">
+                                    <div class="title">Введите&nbsp;сумму</div>
+                                    <div class="extra-controls">
+                                        <input id="rezult-choose2" class="rezult-choose" type="text" value="USD" /> 
+                                        <input type="text" class="js-input" value="0" />
+                                    </div>
+                                </div>                                
+                                <div class="range-slider">
+                                    <input type="text" class="js-range-slider" value="" />
+                                </div>
+                            </div><!--/left-block-->
+                            <div class="right-block">
+                                <ul>
+                                    <li>
+                                    	<span class="list-type"></span>
+                                        <p class="title">Начисления: <span class="color-pink charges">3.5%&nbsp;ежедневно</span></p>
+                                    </li>
+                                    <li>
+                                    	<span class="list-type"></span>
+                                        <p class="title">Всего: <span class="color-pink total-proc">150%</span></p>
+                                    </li>
+                                    <li>
+                                    	<span class="list-type"></span>
+                                        <p class="title">Срок инвестирования: <span class="color-pink rab-day">48&nbsp;рабочих&nbsp;дней</span></p>
+                                    </li>
+                                    <li>
+                                    	<span class="list-type"></span>
+                                        <p class="title">Min-max сумма депозита: <span class="color-pink amount-deposit">$10&nbsp;-&nbsp;$200&nbsp;000</span></p>
+                                    </li>
+                                    <li>
+                                    	<span class="list-type"></span>
+                                        <p class="title">Депозит <span class="color-pink on-deposit">включен</span>&nbsp;в&nbsp;выплаты</p>
+                                    </li>
+                                </ul>
+                                <div class="flex">
+                                    <div id="total-profit-2" class="total-profit">
+                                        <div class="title">Общая&nbsp;прибыль:</div>
+                                        <div class="flex-t">
+                                            <span id="in-total-2">10</span>
+                                            <span id="value-2" class="value">USD</span>
+                                        </div>
+                                    </div>
+                                    <div class="btn-deposit">
+                                    	<a href="#" class="pink-btn btn"><span>Открыть&nbsp;депозит</span></a>
+                                    </div>
+                                </div>
+                            </div><!--/right-block-->
+                        </div><!--/calculator-block-->
+				    </div><!--/content-2-->
+                    
+			        <div class="content-3 t-selector">
+						<div id="calculator-tab-3" class="calculator-block flex">
+                            <div class="left-block">
+                            	<div class="title">Рассчитайте&nbsp;прибыть</div>
+                                <div class="choose-currency">
+                                	<div class="title">Выберите&nbsp;валюту:</div>
+                                    <ul class="currency-block">
+                                        <li id="BTC">BTC</li>
+                                        <li id="LTC">LTC</li>
+                                        <li id="ETH">ETH</li>
+                                        <li id="DASH">DASH</li>
+                                        <li id="RUB">RUB</li>
+                                        <li id="USD" class="active">USD</li>
+                                    </ul>
+                                </div><!--/choose-currency-->
+                                
+                                <div class="flex controls-block">
+                                    <div class="title">Введите&nbsp;сумму</div>
+                                    <div class="extra-controls">
+                                        <input id="rezult-choose3" class="rezult-choose" type="text" value="USD" /> 
+                                        <input type="text" class="js-input" value="0" />
+                                    </div>
+                                </div>                                
+                                <div class="range-slider">
+                                    <input type="text" class="js-range-slider" value="" />
+                                </div>
+                            </div><!--/left-block-->
+                            <div class="right-block">
+                                <ul>
+                                    <li>
+                                    	<span class="list-type"></span>
+                                        <p class="title">Начисления: <span class="color-pink charges">3.5%&nbsp;ежедневно</span></p>
+                                    </li>
+                                    <li>
+                                    	<span class="list-type"></span>
+                                        <p class="title">Всего: <span class="color-pink total-proc">150%</span></p>
+                                    </li>
+                                    <li>
+                                    	<span class="list-type"></span>
+                                        <p class="title">Срок инвестирования: <span class="color-pink rab-day">48&nbsp;рабочих&nbsp;дней</span></p>
+                                    </li>
+                                    <li>
+                                    	<span class="list-type"></span>
+                                        <p class="title">Min-max сумма депозита: <span class="color-pink amount-deposit">$10&nbsp;-&nbsp;$300&nbsp;000</span></p>
+                                    </li>
+                                    <li>
+                                    	<span class="list-type"></span>
+                                        <p class="title">Депозит <span class="color-pink on-deposit">включен</span>&nbsp;в&nbsp;выплаты</p>
+                                    </li>
+                                </ul>
+                                <div class="flex">
+                                    <div id="total-profit-3" class="total-profit">
+                                        <div class="title">Общая&nbsp;прибыль:</div>
+                                        <div class="flex-t">
+                                            <span id="in-total-3">10</span>
+                                            <span id="value-3" class="value">USD</span>
+                                        </div>
+                                    </div>
+                                    <div class="btn-deposit">
+                                    	<a href="#" class="pink-btn btn"><span>Открыть&nbsp;депозит</span></a>
+                                    </div>
+                                </div>
+                            </div><!--/right-block-->
+                        </div><!--/calculator-block-->
+				    </div><!--/content-3-->
+                    
+				    <div class="content-4 t-selector">
+						<div id="calculator-tab-4" class="calculator-block flex">
+                            <div class="left-block">
+                            	<div class="title">Рассчитайте&nbsp;прибыть</div>
+                                <div class="choose-currency">
+                                	<div class="title">Выберите&nbsp;валюту:</div>
+                                    <ul class="currency-block">
+                                        <li id="BTC">BTC</li>
+                                        <li id="LTC">LTC</li>
+                                        <li id="ETH">ETH</li>
+                                        <li id="DASH">DASH</li>
+                                        <li id="RUB">RUB</li>
+                                        <li id="USD" class="active">USD</li>
+                                    </ul>
+                                </div><!--/choose-currency-->
+                                
+                                <div class="flex controls-block">
+                                    <div class="title">Введите&nbsp;сумму</div>
+                                    <div class="extra-controls">
+                                        <input id="rezult-choose4" class="rezult-choose" type="text" value="USD" /> 
+                                        <input type="text" class="js-input" value="0" />
+                                    </div>
+                                </div>                                
+                                <div class="range-slider">
+                                    <input type="text" class="js-range-slider" value="" />
+                                </div>
+                            </div><!--/left-block-->
+                            <div class="right-block">
+                                <ul>
+                                    <li>
+                                    	<span class="list-type"></span>
+                                        <p class="title">Начисления: <span class="color-pink charges">3.5%&nbsp;ежедневно</span></p>
+                                    </li>
+                                    <li>
+                                    	<span class="list-type"></span>
+                                        <p class="title">Всего: <span class="color-pink total-proc">150%</span></p>
+                                    </li>
+                                    <li>
+                                    	<span class="list-type"></span>
+                                        <p class="title">Срок инвестирования: <span class="color-pink rab-day">48&nbsp;рабочих&nbsp;дней</span></p>
+                                    </li>
+                                    <li>
+                                    	<span class="list-type"></span>
+                                        <p class="title">Min-max сумма депозита: <span class="color-pink amount-deposit">$10&nbsp;-&nbsp;$400&nbsp;000</span></p>
+                                    </li>
+                                    <li>
+                                    	<span class="list-type"></span>
+                                        <p class="title">Депозит <span class="color-pink on-deposit">включен</span> в&nbsp;выплаты</p>
+                                    </li>
+                                </ul>
+                                <div class="flex">
+                                    <div id="total-profit-4" class="total-profit">
+                                        <div class="title">Общая&nbsp;прибыль:</div>
+                                        <div class="flex-t">
+                                            <span id="in-total-4">10</span>
+                                            <span id="value-4" class="value">USD</span>
+                                        </div>
+                                    </div>
+                                    <div class="btn-deposit">
+                                    	<a href="#" class="pink-btn btn"><span>Открыть&nbsp;депозит</span></a>
+                                    </div>
+                                </div>
+                            </div><!--/right-block-->
+                        </div><!--/calculator-block-->
+				    </div><!--/content-4-->
+		        </div>
+                </section>
+            </div><!--/margin-top-->
+            
+            <section id="about" class="bg-ov">
+            	<div class="title title-1" data-aos="fade-up" data-aos-once="true">
+                    <p>О компании</p>
+                    <h2>CRYPTOLUC&nbsp;- Надежный партнер</h2>
+                </div>
+                <div class="video container" data-aos="fade-up" data-aos-once="true">
+                    <div class="flex">
+                        <div class="left-block">
+                            <h3>Далеко-далеко за словесными горами в стране гласных &nbsp;и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу.</h3>
+                            <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит.</p>
+                            <div class="registration-data flex shadow bg-white">
+                                <div class="img"><img src="img/img-3.png" alt="img"/></div>
+                                <div class="txt">
+                                    <p>CryptoLuc зарегистрирована в Великобритании</p>
+                                    <span class="number">#3827412491230</span>
+                                    <a href="#" class="btn pink-btn"><span>Проверить компанию</span></a> 
+                                </div>
+                            </div>
+                            <div class="flex protect">
+                                <div>
+                                    <img src="img/ico-1.png"/>
+                                    <p>Data protected by Anti-DDOS</p>
+                                </div>
+                                <div>
+                                    <img src="img/ico-2.png"/>
+                                    <p>User protected by SSL security</p>
+                                </div>
+                            </div>
+                        </div><!--/.left-block-->
+                        <div class="right-block">
+                            <div class="img">
+                                <img src="img/img-2.png" alt="img"/>
+                            </div>
+                            <div id="video" class="modal-block">
+                                <div class="video-play">
+                                    <div class="circle">
+                                        <svg width="265px" height="265px">
+                                            <defs>
+                                                <linearGradient id="PSgrad_0" x1="0%" x2="0%" y1="0%" y2="100%">
+                                                  <stop offset="0%" stop-color="rgb(233,33,130)" stop-opacity="1" />
+                                                  <stop offset="100%" stop-color="rgb(160,20,239)" stop-opacity="1" />
+                                                </linearGradient>
+                                            </defs>
+                                            <path fill-rule="evenodd"  fill="url(#PSgrad_0)"
+                                             d="M132.750,0.950 C205.541,0.950 264.550,59.959 264.550,132.750 C264.550,205.541 205.541,264.550 132.750,264.550 C59.959,264.550 0.950,205.541 0.950,132.750 C0.950,59.959 59.959,0.950 132.750,0.950 Z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="circle-2">
+                                        <span>
+                                            <svg width="16px" height="18px">
+                                                <path fill-rule="evenodd"  fill="rgb(210, 28, 164)"
+                                             d="M15.141,7.775 L2.572,0.446 C1.427,-0.223 0.504,0.312 0.510,1.636 L0.574,16.184 C0.581,17.509 1.515,18.048 2.664,17.385 L15.136,10.185 C16.282,9.522 16.285,8.443 15.141,7.775 Z"/>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div><!--/video-play-->
+                            </div><!--/#video-->
+                        </div><!--/.right-block-->
+                    </div>
+                </div><!--/.video-->
+            </section>
+            
+            <section id="activity" class="bg-white bg-ov">
+                <div class="title title-1" data-aos="fade-up" data-aos-once="true">
+                    <p>Активность</p>
+                    <h2>Последние операции наших партнеров</h2>
+                </div>
+                <div class="container" data-aos="fade-up" data-aos-once="true">
+                    <div class="flex">
+                        <div class="item">
+                            <div class="top flex">
+                                <div class="img"><img src="img/LOGO-BIT.png" alt=""/></div>
+                                <div class="title">Депозит</div>
+                            </div>
+                            <div class="number up">+ 0.2221456 BTC</div>
+                        </div>
+                        <div class="item">
+                            <div class="top flex">
+                                <div class="img"><img src="img/logo-ADVCASH.png" alt=""/></div>
+                                <div class="title">Депозит</div>
+                            </div>
+                            <div class="number down">+ 0.2221456 BTC</div>
+                        </div>
+                        <div class="item">
+                            <div class="top flex">
+                                <div class="img"><img src="img/logo-ETH.png" alt=""/></div>
+                                <div class="title">Депозит</div>
+                            </div>
+                            <div class="number up">+ 0.2221456 BTC</div>
+                        </div>
+                        <div class="item">
+                            <div class="top flex">
+                                <div class="img"><img src="img/logo-nix.png" alt=""/></div>
+                                <div class="title">Депозит</div>
+                            </div>
+                            <div class="number down">+ 0.2221456 BTC</div>
+                        </div>
+                        <div class="item">
+                            <div class="top flex">
+                                <div class="img"><img src="img/logo-pay.png" alt=""/></div>
+                                <div class="title">Депозит</div>
+                            </div>
+                            <div class="number up">+ 0.2221456 BTC</div>
+                        </div>
+                        <div class="item">
+                            <div class="top flex">
+                                <div class="img"><img src="img/LOGO-BIT.png" alt=""/></div>
+                                <div class="title">Депозит</div>
+                            </div>
+                            <div class="number up">+ 0.2221456 BTC</div>
+                        </div>
+                        <div class="item">
+                            <div class="top flex">
+                                <div class="img"><img src="img/logo-ADVCASH.png" alt=""/></div>
+                                <div class="title">Депозит</div>
+                            </div>
+                            <div class="number down">+ 0.2221456 BTC</div>
+                        </div>
+                        <div class="item">
+                            <div class="top flex">
+                                <div class="img"><img src="img/logo-ETH.png" alt=""/></div>
+                                <div class="title">Депозит</div>
+                            </div>
+                            <div class="number up">+ 0.2221456 BTC</div>
+                        </div>
+                        <div class="item">
+                            <div class="top flex">
+                                <div class="img"><img src="img/logo-nix.png" alt=""/></div>
+                                <div class="title">Депозит</div>
+                            </div>
+                            <div class="number down">+ 0.2221456 BTC</div>
+                        </div>
+                        <div class="item">
+                            <div class="top flex">
+                                <div class="img"><img src="img/logo-pay.png" alt=""/></div>
+                                <div class="title">Депозит</div>
+                            </div>
+                            <div class="number up">+ 0.2221456 BTC</div>
+                        </div>
+                    </div>
+                    <div class="btn-block"><a href="#" class="pink-btn btn"><span>Открыть депозит</span></a></div>
+                </div><!--/container-->
+            </section>
+            
+            <section id="advantages" class="bg-ov">
+            	<div class="title title-1" data-aos="fade-up" data-aos-once="true">
+                    <p>Наши преимущества</p>
+                    <h2>Доходность ваших инвестиций обеспечена <br/>нашим профессионализмом</h2>
+                </div>
+                <div class="container" data-aos="fade-up" data-aos-once="true">
+                	<div class="flex">
+                        <div class="item flex">
+                            <div class="img"><img src="img/ico-6.png" alt=""/></div>
+                            <div class="title"><h3>Большой опыт в разработках</h3></div>
+                            <div class="txt">
+                            	<p>Вашими средствами управляет команда профессионалов, которые применяют личные разработки в добыче биткоина на модернизированных ASIC-майнерах</p>
+                            </div>
+                        </div><!--/item-->
+                        <div class="item flex">
+                            <div class="img"><img src="img/ico-7.png" alt=""/></div>
+                            <div class="title"><h3>Выгодный инвестиционный инструмент</h3></div>
+                            <div class="txt">
+                            	<p>Криптовалюта показывает стабильный рост на дистанции, заработок на ней - один из наиболее выгодных способов инвестирования</p>
+                            </div>
+                        </div><!--/item-->
+                        <div class="item flex">
+                            <div class="img"><img src="img/ico-8.png" alt=""/></div>
+                            <div class="title"><h3>Круглосуточная поддержка</h3></div>
+                            <div class="txt">
+                            	<p>Служба поддержки Cryptoluc ответит на любой возникший у вас вопрос и поможет решить проблемы в процессе регистрации и инвестирования</p>
+                            </div>
+                        </div><!--/item-->
+                        <div class="item flex">
+                            <div class="img"><img src="img/ico-9.png" alt=""/></div>
+                            <div class="title"><h3>Пассивный доход</h3></div>
+                            <div class="txt">
+                            	<p>Инвестиции с Cryptoluc не потребуют много вашего времени - всю работу сделают наши профессионалы, а вы, в обозначенный регламентом срок, получите прибыль</p>
+                            </div>
+                        </div><!--/item-->
+                        <div class="item flex">
+                            <div class="img"><img src="img/ico-10.png" alt=""/></div>
+                            <div class="title"><h3>Комфортные условия для инвесторов</h3></div>
+                            <div class="txt">
+                            	<p>Мы ведем прием средств с различных платежных систем. Вы можете инвестировать через любой доступный и удобный для вас сервис
+</p>
+                            </div>
+                        </div><!--/item-->
+                        <div class="item flex">
+                            <div class="img"><img src="img/ico-11.png" alt=""/></div>
+                            <div class="title"><h3>Надежная защита</h3></div>
+                            <div class="txt">
+                            	<p>Ваши средства и персональные данные находятся под надежной защитой - наш сайт соответствует всем современным требованиям, мы гарантируем конфиденциальность</p>
+                            </div>
+                        </div><!--/item-->
+                    </div>
+                </div><!--/container-->
+            </section>
+                
+            <section class="bg-white" id="logo-block">
+                <div class="flex container"  data-aos="fade-up" data-aos-once="true">
+                	<div class="img"><img src="img/bitcoin.png" alt="bitcoin"/></div>
+                    <div class="img"><img src="img/ETH.png" alt="eth"/></div>
+                    <div class="img"><img src="img/ADVCASH.png" alt="ADVCASH"/></div>
+                    <div class="img"><img src="img/LTC.png" alt="LTC"/></div>
+                    <div class="img"><img src="img/dash.png" alt="dash"/></div>
+                    <div class="img"><img src="img/QIWI.png" alt="QIWI"/></div>
+                    <div class="img"><img src="img/NIX.png" alt="NIX"/></div>
+                    <div class="img"><img src="img/PAYER.png" alt="PAYER"/></div>
+                    <div class="img"><img src="img/perfect-money.png" alt="perfect-money"/></div>
+                </div>
+            </section>
+        </div><!--/#wrapper-->
+        
+        <footer>
+            <div class="course-block">
+                <div class="container flex">
+                    <div class="course">
+                        <span class="title">BTC/USD</span>
+                        <span class="value">$8804.07</span>
+                        <span class="mark up">+0.07</span>
+                    </div><!--/.course-->
+                    <div class="course">
+                        <span class="title">BTC/USD</span>
+                        <span class="value">$8804.07</span>
+                        <span class="mark down">-0.12</span>
+                    </div><!--/.course-->
+                    <div class="course">
+                        <span class="title">BTC/USD</span>
+                        <span class="value">$8804.07</span>
+                        <span class="mark down">-0.12</span>
+                    </div><!--/.course-->
+                    <div class="course">
+                        <span class="title">BTC/USD</span>
+                        <span class="value">$8804.07</span>
+                        <span class="mark up">+0.07</span>
+                    </div><!--/.course-->
+                    <div class="course">
+                        <span class="title">BTC/USD</span>
+                        <span class="value">$8804.07</span>
+                        <span class="mark up">+0.07</span>
+                    </div><!--/.course-->
+                    <div class="course">
+                        <span class="title">BTC/USD</span>
+                        <span class="value">$8804.07</span>
+                        <span class="mark down">-0.12</span>
+                    </div><!--/.course-->
+                </div>
+            </div><!--/.top-->
+            
+            <div class="container">
+                <div class="top flex">
+                    <div class="logo"><a href="#" class="flex"><img src="img/logo.svg" alt="CryptoLuc" class="l-1"/><img src="img/CryptoLuc.svg" alt="CryptoLuc" class="l-2"/></a></div>
+                    <div class="social-networks">
+                        <a href="#" class="telegram"><img src="img/telegram.svg" alt="telegram"/></a>
+                        <a href="#" class="skype"><img src="img/skype.svg" alt="skype"/></a>
+                        <a href="#" class="facebook"><img src="img/facebook.svg" alt="facebook"/></a>
+                        <a href="#" class="vk"><img src="img/vk.svg" alt="vk"/></a>
+                        <a href="#" class="youtube"><img src="img/youtube.svg" alt="youtube"/></a>
+                    </div>
+                </div><!--/.top-->
+                
+                <div class="middle flex">
+                	<div class="contacts">
+                        <div class="adress">
+                            <p>116&nbsp;Hampton&nbsp;Road, Mayfair, London, United&nbsp;Kingdom</p>
+                        </div>
+                        <div class="mail">
+                            <a href="mailto:Info@cryptoluc.com">Info@cryptoluc.com</a>
+                        </div>
+                    </div>
+                    <nav class="menu flex">
+                        <ul>
+                            <li><a href="#">Главная</a></li> 
+                            <li><a href="#">отзывы</a></li> 
+                        </ul>
+                        <ul>      
+                            <li><a href="#">Инвестиции </a></li>
+                            <li><a href="#">Партнерство</a></li>
+						</ul>
+                        <ul>   
+                            <li><a href="#">FAQ</a></li> 
+                            <li><a href="#">О нас</a></li> 
+                            
+						</ul>
+                        <ul>     
+                            <li><a href="#">Как начать</a></li>      
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div><!--/.middle-->
+                <div class="bottom flex">
+                    <div class="copyright">Copyright © 2018 Bitcowe. All rights reserved</div>
+                    <div class="terms-use"><a href="#">Пользовательское соглашение</a></div>
+                </div>
+            </div>
+        </footer>
+        
+        <!--MODAL-->
+        <div class="modal" data-id="#video">
+            <div class="modal-ov"></div>
+            <div class="modal-content">
+                <span class="close-v close">&times;</span>
+                <video controls id="v" class="modal-content">
+                    <source src="img/video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+                </video>
+            </div>
+        </div>
+        <script>
+			$(".close-v").click(function () {
+				var myVideo = document.getElementById("v");
+				myVideo.pause ();
+			});
+		</script>
+        <script type="text/javascript" src="animate/aos.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>  
+        
+        <script src="js/ion.rangeSlider.js"></script>
+        <script type="text/javascript" src="js/calculator.js"></script>
+	</body>
+</html>
