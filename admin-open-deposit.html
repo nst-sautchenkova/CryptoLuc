@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title>CryptoLuc</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+       
+    <link rel="stylesheet" href="css/ion.rangeSlider.css" />
+    <link rel="stylesheet" type="text/css" href="animate/aos.css" />
+    <link rel="stylesheet" type="text/css" href="css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" /> 
+    
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+    
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script src="js/modernizr.custom.js"></script> 
+</head>
+	<body>
+         <!--------------------------------------->
+        <!--------------------------------------->
+        <!--  NAV PAGES                        -->
+        <!--------------------------------------->
+        <!--------------------------------------->
+        <div id="nav-pages">
+            <a href="index.html">1</a>
+            <a href="investments.html">2</a>
+            <a href="about.html">3</a>
+            <a href="contacts.html">4</a>
+            <a href="entry.html">5</a>
+            <a href="faq.html">6</a>
+            <a href="partnership.html">7</a>
+            <a href="review.html">8</a>
+            <a href="start.html">9</a>
+            <a href="admin-open-deposit.html">10</a>
+            <a href="admin-account.html">11</a>
+            <a href="admin-referal.html">12</a>
+            <a href="admin-requisites.html">13</a>
+            <a href="admin-banner.html">14</a>
+            <a href="admin-settings.html">15</a>
+            <a href="admin-table.html">16</a>
+            <a href="admin-withdraw-funds.html">17</a>
+        </div>
+        <style>
+			#nav-pages{
+				position: fixed;
+				height: 100vh;
+				z-index: 9999;
+				background: rgba(255,255,255,0.5);
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-start;
+				align-items: center;
+				overflow-y: auto;
+				padding: 0 5px 5px;
+			}
+			#nav-pages a{
+				text-decoration: none;
+				color: #fff;
+				display: block;
+				padding: 5px;
+				background: rgba(0, 0, 0, 0.4);
+				text-align: center;
+				width: 30px;
+				margin-top: 5px;
+			}
+			#nav-pages a:hover{
+				background: rgba(0, 0, 0, 0.8);
+			}
+		</style>
+        <!--------------------------------------->
+        <!--------------------------------------->
+        <!--  NAV PAGES                        -->
+        <!--------------------------------------->
+        <!--------------------------------------->
+        <div id="loader">
+            <div class="spinner">
+                <div class="bubble-1"></div>
+                <div class="bubble-2"></div>
+             </div>
+        </div>
+        <div id="wrapper" class="admin">
+            <header>
+                <div class="container">
+                    <div class="top flex">
+                        <div class="left-block flex">
+                            <div class="logo"><a href="#" class="flex"><img src="img/logo.svg" alt="CryptoLuc" class="l-1"/><img src="img/CryptoLuc.svg" alt="CryptoLuc" class="l-2"/></a></div>
+                            <div class="social-networks">
+                                <a href="#" class="telegram"><img src="img/telegram.svg" alt="telegram"/></a>
+                                <a href="#" class="skype"><img src="img/skype.svg" alt="skype"/></a>
+                                <a href="#" class="facebook"><img src="img/facebook.svg" alt="facebook"/></a>
+                                <a href="#" class="vk"><img src="img/vk.svg" alt="vk"/></a>
+                                <a href="#" class="youtube"><img src="img/youtube.svg" alt="youtube"/></a>
+                            </div>
+                        </div>
+                        <div class="right-block flex">
+                            <div class="language flex">
+                                <div class="ru">
+                                    <a href="#">Русский</a>
+                                </div>
+                                <div class="en">
+                                    <a href="#">English</a>
+                                </div>
+                            </div>
+                            <div class="reg-block">
+                                <a href="#" class="btn entry">Выход</a>
+                            </div>
+                        </div>
+                    </div><!--/.top-->
+                </div><!--/.container-->
+            </header><!--/header-->
+            
+                            
+            <div id="a-menu" class="margin-top container shadow" data-aos="fade-up" data-aos-delay="300" data-aos-once="true">
+                <a class="cd-nav-trigger scale">
+                    <div class="hamburger-menu menu-toggle">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </a>
+                <div class="menu-a">
+                    <div class="top">
+                        <div class="social-networks">
+                            <a href="#" class="telegram"><img src="img/telegram.svg" alt="telegram"/></a>
+                            <a href="#" class="skype"><img src="img/skype.svg" alt="skype"/></a>
+                            <a href="#" class="facebook"><img src="img/facebook.svg" alt="facebook"/></a>
+                            <a href="#" class="vk"><img src="img/vk.svg" alt="vk"/></a>
+                            <a href="#" class="youtube"><img src="img/youtube.svg" alt="youtube"/></a>
+                        </div>
+                   
+                        <div class="language flex">
+                            <div class="ru">
+                                <a href="#">Русский</a>
+                            </div>
+                            <div class="en">
+                                <a href="#">English</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex nav">
+                        <ul>
+                            <div class="img"><img src="img/admin/ico-1.svg" alt=""/></div>
+                            <div class="title">
+                                <h2>Операции</h2>
+                            </div>
+                            <li class="active"><a href="#">Открыть депозит</a></li>    
+                            <li><a href="#">Вывести средства</a></li>       
+                            <li><a href="#">Реинвестировать</a></li>   
+                        </ul>
+                        <ul>
+                            <div class="img"><img src="img/admin/ico-2.svg" alt=""/></div>
+                            <div class="title">
+                                <h2>История</h2>
+                            </div>
+                            <li><a href="#">История операций</a></li>    
+                            <li><a href="#">История выплат</a></li>       
+                            <li><a href="#">Мои депозиты</a></li>   
+                        </ul>
+                        <ul>
+                            <div class="img"><img src="img/admin/ico-3.svg" alt=""/></div>
+                            <div class="title">
+                                <h2>Партнеры</h2>
+                            </div>
+                            <li><a href="#">Моя команда</a></li>    
+                            <li><a href="#">Рекламные баннеры</a></li>       
+                            <li><a href="#">Реферальные начисления</a></li>   
+                        </ul>
+                        <ul>
+                            <div class="img"><img src="img/admin/ico-4.svg" alt=""/></div>
+                            <div class="title">
+                                <h2>Офис</h2>
+                            </div>
+                            <li><a href="#">Мой аккаунт</a></li>    
+                            <li><a href="#">Мои настройки</a></li>       
+                            <li><a href="#">Платежные реквизиты</a></li>   
+                        </ul>
+                    </div>
+                </div>
+            </div><!--/margin-top-->
+            
+                        
+            <section class="open-deposit bg-white shadow container m-top-30" data-aos="fade-up" data-aos-delay="700" data-aos-once="true">
+                <div id="tab-block" class="tabs">
+                    <input id="tab-1" type="radio" name="radio-set" class="tab-selector-1 tab-selector" checked="checked" />
+                    <label for="tab-1" class="tab-label-1 label-selector"><span class="number">50%</span><p>прибыли за 24 часа</p></label>
+            
+                    <input id="tab-2" type="radio" name="radio-set" class="tab-selector-2 tab-selector" />
+                    <label for="tab-2" class="tab-label-2 label-selector"><span class="number">100%</span><p>прибыли за 48 часа</p></label>
+            
+                    <input id="tab-3" type="radio" name="radio-set" class="tab-selector-3 tab-selector" />
+                    <label for="tab-3" class="tab-label-3 label-selector"><span class="number">2000%</span><p>прибыли за 60 часов</p></label>
+                
+                    <input id="tab-4" type="radio" name="radio-set" class="tab-selector-4 tab-selector" />
+                    <label for="tab-4" class="tab-label-4 label-selector"><span class="number">9999%</span><p>прибыли за 99 часов</p></label>
+                
+                    <div class="clear-shadow"></div>
+                    
+                    <div class="content">
+                        <div class="content-1 t-selector">
+                            <div id="calculator-tab-1" class="calculator-block flex">
+                                <div class="left-block">
+                                    <div class="flex">
+                                        <div class="title">Платежная система:</div>
+                                        <div class="select-block">
+                                            <select id="dropdown-1" class="cd-select">
+                                                <option value="1" class="ico-advcash">Advcash</option>
+                                                <option value="2" class="ico-btc">btc</option>
+                                                <option value="3" class="ico-ltc" alt=""/>ltc</option>
+                                                <option value="4" class="ico-eth" alt=""/>eth</option>
+                                                <option value="5" class="ico-dash" alt=""/>dash</option>
+                                                <option value="6" class="ico-nix" alt=""/>nix</option>
+                                                <option value="7" class="ico-qiwi" alt=""/>qiwi</option>
+                                                <option value="8" class="ico-PM" alt=""/>PM</option>
+                                                <option value="9" class="ico-payer" alt=""/>payer</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="choose-currency flex">
+                                        <div class="title">Валюта:</div>
+                                        <ul class="currency-block">
+                                            <li id="USD" class="active">USD</li>
+                                             <li id="RUB">RUB</li>
+                                        </ul>
+                                    </div><!--/choose-currency-->
+                                    
+                                    <div class="flex controls-block">
+                                        <div class="title">Введите&nbsp;сумму</div>
+                                        <div class="extra-controls">
+                                            <input id="rezult-choose1" class="rezult-choose" type="text" value="USD" /> 
+                                            <input type="text" class="js-input" value="0" />
+                                        </div>
+                                    </div>                                
+                                    <div class="range-slider">
+                                        <input type="text" class="js-range-slider" value="" />
+                                    </div>
+                                </div><!--/left-block-->
+                                
+                                <div class="right-block">
+                                    <ul>
+                                        <li>
+                                            <span class="list-type"></span>
+                                            <p class="title">Начисления: <span class="color-pink charges">3.5%&nbsp;ежедневно</span></p>
+                                        </li>
+                                        <li>
+                                            <span class="list-type"></span>
+                                            <p class="title">Всего: <span class="color-pink total-proc">150%</span></p>
+                                        </li>
+                                        <li>
+                                            <span class="list-type"></span>
+                                            <p class="title">Срок инвестирования: <span class="color-pink rab-day">48&nbsp;рабочих дней</span></p>
+                                        </li>
+                                        <li>
+                                            <span class="list-type"></span>
+                                            <p class="title">Min-max сумма депозита: <span class="color-pink amount-deposit">$10&nbsp;-&nbsp;$100&nbsp;000</span></p>
+                                        </li>
+                                        <li>
+                                            <span class="list-type"></span>
+                                            <p class="title">Депозит <span class="color-pink on-deposit">включен</span>&nbsp;в&nbsp;выплаты</p>
+                                        </li>
+                                    </ul>
+                                    <div class="flex">
+                                        <div id="total-profit-1" class="total-profit">
+                                            <div class="title">Общая&nbsp;прибыль:</div>
+                                            <div class="flex-t">
+                                                <span id="in-total-1">10</span>
+                                                <span id="value-1" class="value">USD</span>
+                                            </div>
+                                        </div>
+                                        <div class="btn-deposit">
+                                            <a href="#" class="pink-btn btn"><span>Открыть&nbsp;депозит</span></a>
+                                        </div>
+                                    </div>
+                                </div><!--/right-block-->
+                            </div><!--/calculator-block-->
+                        </div><!--/content-1-->
+                        
+                        <div class="content-2 t-selector">
+                            <div id="calculator-tab-2" class="calculator-block flex">
+                                <div class="left-block">
+                                    <div class="flex">
+                                        <div class="title">Платежная система:</div>
+                                        <div class="select-block">
+                                            <select id="dropdown-2" class="cd-select">
+                                                <option value="1" class="ico-advcash">Advcash</option>
+                                                <option value="2" class="ico-btc">btc</option>
+                                                <option value="3" class="ico-ltc" alt=""/>ltc</option>
+                                                <option value="4" class="ico-eth" alt=""/>eth</option>
+                                                <option value="5" class="ico-dash" alt=""/>dash</option>
+                                                <option value="6" class="ico-nix" alt=""/>nix</option>
+                                                <option value="7" class="ico-qiwi" alt=""/>qiwi</option>
+                                                <option value="8" class="ico-PM" alt=""/>PM</option>
+                                                <option value="9" class="ico-payer" alt=""/>payer</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="choose-currency flex">
+                                        <div class="title">Валюта:</div>
+                                        <ul class="currency-block">
+                                            <li id="USD" class="active">USD</li>
+                                             <li id="RUB">RUB</li>
+                                        </ul>
+                                    </div><!--/choose-currency-->
+                                    
+                                    <div class="flex controls-block">
+                                        <div class="title">Введите&nbsp;сумму</div>
+                                        <div class="extra-controls">
+                                            <input id="rezult-choose2" class="rezult-choose" type="text" value="USD" /> 
+                                            <input type="text" class="js-input" value="0" />
+                                        </div>
+                                    </div>                                
+                                    <div class="range-slider">
+                                        <input type="text" class="js-range-slider" value="" />
+                                    </div>
+                                </div><!--/left-block-->
+                                <div class="right-block">
+                                    <ul>
+                                        <li>
+                                            <span class="list-type"></span>
+                                            <p class="title">Начисления: <span class="color-pink charges">3.5%&nbsp;ежедневно</span></p>
+                                        </li>
+                                        <li>
+                                            <span class="list-type"></span>
+                                            <p class="title">Всего: <span class="color-pink total-proc">150%</span></p>
+                                        </li>
+                                        <li>
+                                            <span class="list-type"></span>
+                                            <p class="title">Срок инвестирования: <span class="color-pink rab-day">48&nbsp;рабочих&nbsp;дней</span></p>
+                                        </li>
+                                        <li>
+                                            <span class="list-type"></span>
+                                            <p class="title">Min-max сумма депозита: <span class="color-pink amount-deposit">$10&nbsp;-&nbsp;$200&nbsp;000</span></p>
+                                        </li>
+                                        <li>
+                                            <span class="list-type"></span>
+                                            <p class="title">Депозит <span class="color-pink on-deposit">включен</span>&nbsp;в&nbsp;выплаты</p>
+                                        </li>
+                                    </ul>
+                                    <div class="flex">
+                                        <div id="total-profit-2" class="total-profit">
+                                            <div class="title">Общая&nbsp;прибыль:</div>
+                                            <div class="flex-t">
+                                                <span id="in-total-2">10</span>
+                                                <span id="value-2" class="value">USD</span>
+                                            </div>
+                                        </div>
+                                        <div class="btn-deposit">
+                                            <a href="#" class="pink-btn btn"><span>Открыть&nbsp;депозит</span></a>
+                                        </div>
+                                    </div>
+                                </div><!--/right-block-->
+                            </div><!--/calculator-block-->
+                        </div><!--/content-2-->
+                        
+                        <div class="content-3 t-selector">
+                            <div id="calculator-tab-3" class="calculator-block flex">
+                                <div class="left-block">
+                                    <div class="flex">
+                                        <div class="title">Платежная система:</div>
+                                        <div class="select-block">
+                                            <select id="dropdown-3" class="cd-select">
+                                                <option value="1" class="ico-advcash">Advcash</option>
+                                                <option value="2" class="ico-btc">btc</option>
+                                                <option value="3" class="ico-ltc" alt=""/>ltc</option>
+                                                <option value="4" class="ico-eth" alt=""/>eth</option>
+                                                <option value="5" class="ico-dash" alt=""/>dash</option>
+                                                <option value="6" class="ico-nix" alt=""/>nix</option>
+                                                <option value="7" class="ico-qiwi" alt=""/>qiwi</option>
+                                                <option value="8" class="ico-PM" alt=""/>PM</option>
+                                                <option value="9" class="ico-payer" alt=""/>payer</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="choose-currency flex">
+                                        <div class="title">Валюта:</div>
+                                        <ul class="currency-block">
+                                            <li id="USD" class="active">USD</li>
+                                             <li id="RUB">RUB</li>
+                                        </ul>
+                                    </div><!--/choose-currency-->
+                                    
+                                    <div class="flex controls-block">
+                                        <div class="title">Введите&nbsp;сумму</div>
+                                        <div class="extra-controls">
+                                            <input id="rezult-choose3" class="rezult-choose" type="text" value="USD" /> 
+                                            <input type="text" class="js-input" value="0" />
+                                        </div>
+                                    </div>                                
+                                    <div class="range-slider">
+                                        <input type="text" class="js-range-slider" value="" />
+                                    </div>
+                                </div><!--/left-block-->
+                                <div class="right-block">
+                                    <ul>
+                                        <li>
+                                            <span class="list-type"></span>
+                                            <p class="title">Начисления: <span class="color-pink charges">3.5%&nbsp;ежедневно</span></p>
+                                        </li>
+                                        <li>
+                                            <span class="list-type"></span>
+                                            <p class="title">Всего: <span class="color-pink total-proc">150%</span></p>
+                                        </li>
+                                        <li>
+                                            <span class="list-type"></span>
+                                            <p class="title">Срок инвестирования: <span class="color-pink rab-day">48&nbsp;рабочих&nbsp;дней</span></p>
+                                        </li>
+                                        <li>
+                                            <span class="list-type"></span>
+                                            <p class="title">Min-max сумма депозита: <span class="color-pink amount-deposit">$10&nbsp;-&nbsp;$300&nbsp;000</span></p>
+                                        </li>
+                                        <li>
+                                            <span class="list-type"></span>
+                                            <p class="title">Депозит <span class="color-pink on-deposit">включен</span>&nbsp;в&nbsp;выплаты</p>
+                                        </li>
+                                    </ul>
+                                    <div class="flex">
+                                        <div id="total-profit-3" class="total-profit">
+                                            <div class="title">Общая&nbsp;прибыль:</div>
+                                            <div class="flex-t">
+                                                <span id="in-total-3">10</span>
+                                                <span id="value-3" class="value">USD</span>
+                                            </div>
+                                        </div>
+                                        <div class="btn-deposit">
+                                            <a href="#" class="pink-btn btn"><span>Открыть&nbsp;депозит</span></a>
+                                        </div>
+                                    </div>
+                                </div><!--/right-block-->
+                            </div><!--/calculator-block-->
+                        </div><!--/content-3-->
+                        
+                        <div class="content-4 t-selector">
+                            <div id="calculator-tab-4" class="calculator-block flex">
+                                <div class="left-block">
+                                    <div class="flex">
+                                        <div class="title">Платежная система:</div>
+                                        <div class="select-block">
+                                            <select id="dropdown-4" class="cd-select">
+                                                <option value="1" class="ico-advcash">Advcash</option>
+                                                <option value="2" class="ico-btc">btc</option>
+                                                <option value="3" class="ico-ltc" alt=""/>ltc</option>
+                                                <option value="4" class="ico-eth" alt=""/>eth</option>
+                                                <option value="5" class="ico-dash" alt=""/>dash</option>
+                                                <option value="6" class="ico-nix" alt=""/>nix</option>
+                                                <option value="7" class="ico-qiwi" alt=""/>qiwi</option>
+                                                <option value="8" class="ico-PM" alt=""/>PM</option>
+                                                <option value="9" class="ico-payer" alt=""/>payer</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="choose-currency flex">
+                                        <div class="title">Валюта:</div>
+                                        <ul class="currency-block">
+                                            <li id="USD" class="active">USD</li>
+                                             <li id="RUB">RUB</li>
+                                        </ul>
+                                    </div><!--/choose-currency-->
+                                    
+                                    <div class="flex controls-block">
+                                        <div class="title">Введите&nbsp;сумму</div>
+                                        <div class="extra-controls">
+                                            <input id="rezult-choose4" class="rezult-choose" type="text" value="USD" /> 
+                                            <input type="text" class="js-input" value="0" />
+                                        </div>
+                                    </div>                                
+                                    <div class="range-slider">
+                                        <input type="text" class="js-range-slider" value="" />
+                                    </div>
+                                </div><!--/left-block-->
+                                <div class="right-block">
+                                    <ul>
+                                        <li>
+                                            <span class="list-type"></span>
+                                            <p class="title">Начисления: <span class="color-pink charges">3.5%&nbsp;ежедневно</span></p>
+                                        </li>
+                                        <li>
+                                            <span class="list-type"></span>
+                                            <p class="title">Всего: <span class="color-pink total-proc">150%</span></p>
+                                        </li>
+                                        <li>
+                                            <span class="list-type"></span>
+                                            <p class="title">Срок инвестирования: <span class="color-pink rab-day">48&nbsp;рабочих&nbsp;дней</span></p>
+                                        </li>
+                                        <li>
+                                            <span class="list-type"></span>
+                                            <p class="title">Min-max сумма депозита: <span class="color-pink amount-deposit">$10&nbsp;-&nbsp;$400&nbsp;000</span></p>
+                                        </li>
+                                        <li>
+                                            <span class="list-type"></span>
+                                            <p class="title">Депозит <span class="color-pink on-deposit">включен</span> в&nbsp;выплаты</p>
+                                        </li>
+                                    </ul>
+                                    <div class="flex">
+                                        <div id="total-profit-4" class="total-profit">
+                                            <div class="title">Общая&nbsp;прибыль:</div>
+                                            <div class="flex-t">
+                                                <span id="in-total-4">10</span>
+                                                <span id="value-4" class="value">USD</span>
+                                            </div>
+                                        </div>
+                                        <div class="btn-deposit">
+                                            <a href="#" class="pink-btn btn"><span>Открыть&nbsp;депозит</span></a>
+                                        </div>
+                                    </div>
+                                </div><!--/right-block-->
+                            </div><!--/calculator-block-->
+                        </div><!--/content-4-->
+                    </div>
+                </div>
+            </section>
+            
+        </div><!--/#wrapper-->
+        
+        <footer class="f-admin">
+            <div class="course-block">
+                <div class="container flex">
+                    <div class="course">
+                        <span class="title">BTC/USD</span>
+                        <span class="value">$8804.07</span>
+                        <span class="mark up">+0.07</span>
+                    </div><!--/.course-->
+                    <div class="course">
+                        <span class="title">BTC/USD</span>
+                        <span class="value">$8804.07</span>
+                        <span class="mark down">-0.12</span>
+                    </div><!--/.course-->
+                    <div class="course">
+                        <span class="title">BTC/USD</span>
+                        <span class="value">$8804.07</span>
+                        <span class="mark down">-0.12</span>
+                    </div><!--/.course-->
+                    <div class="course">
+                        <span class="title">BTC/USD</span>
+                        <span class="value">$8804.07</span>
+                        <span class="mark up">+0.07</span>
+                    </div><!--/.course-->
+                    <div class="course">
+                        <span class="title">BTC/USD</span>
+                        <span class="value">$8804.07</span>
+                        <span class="mark up">+0.07</span>
+                    </div><!--/.course-->
+                    <div class="course">
+                        <span class="title">BTC/USD</span>
+                        <span class="value">$8804.07</span>
+                        <span class="mark down">-0.12</span>
+                    </div><!--/.course-->
+                </div>
+            </div><!--/.top-->
+            
+            <div class="container">
+                <div class="flex flex-p">
+                    <div class="logo"><a href="#" class="flex"><img src="img/logo.svg" alt="CryptoLuc" class="l-1"/><img src="img/CryptoLuc.svg" alt="CryptoLuc" class="l-2"/></a></div>
+                    <div class="flex align-right">
+                        <div class="copyright">Copyright © 2018 Bitcowe. All rights reserved</div>
+                        <div class="terms-use"><a href="#">Пользовательское соглашение</a></div>
+                    </div>
+                </div><!--/.top-->
+            </div>
+        </footer>
+        
+        
+        <script type="text/javascript" src="js/jquery.dropdown.js"></script>
+        <script>
+			$( function() {
+				$( '#dropdown-1' ).dropdown({});
+				$( '#dropdown-2' ).dropdown({});
+				$( '#dropdown-3' ).dropdown({});
+				$( '#dropdown-4' ).dropdown({});
+			});
+		</script>
+        <script type="text/javascript" src="animate/aos.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>  
+        
+        <script src="js/ion.rangeSlider.js"></script>
+        <script type="text/javascript" src="js/calculator.js"></script>
+        
+
+	</body>
+</html>
