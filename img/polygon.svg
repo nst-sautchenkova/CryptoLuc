@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16.75 19.313">
+            
+<defs>
+    <style>
+      .cls-1 {
+        fill-rule: evenodd;
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="3024.405" y1="251.219" x2="3024.405" y2="231.906" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e92182"/>
+      <stop offset="1" stop-color="#a014ef"/>
+    </linearGradient>
+  </defs>
+  <path id="polygon" data-name="polygon" class="cls-1" d="M3032.77,246.405l-8.37,4.823-8.36-4.833,0.01-9.655,8.36-4.823,8.36,4.833v9.655Z" transform="translate(-3016.03 -231.906)"/>
+</svg>
