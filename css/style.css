@@ -443,6 +443,7 @@ iframe{
 /*-------------*/
 header{
 	background: url(../img/baner.jpg) no-repeat center top fixed;
+	background: url(https://nst-sautchenkova.github.io/CryptoLuc/img/baner.jpg) no-repeat center top fixed;
 	min-height:550px;
 	position:relative;
 	background-size: cover;
